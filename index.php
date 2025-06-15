@@ -6,15 +6,22 @@
     <title>Document</title>
 </head>
 <body> 
-    <form action="register.php" mothod="POST">
+    <form  method="post">
+        <label>
+           nombre :
+        </label>
+        <input type="text" name="name" id="name" required> 
         <label>
             ingrese correo :
         </label>
         <input type="email" name="email" id="email" required> 
         <br>
-        <button>enviar</button>
+        <button name="enviar">enviar</button>
 
     </form>
+    <?php
+        include("register.php");
+    ?>
     
 </body>
 </html>
